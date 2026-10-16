@@ -1,6 +1,6 @@
 *.pyc
 __pycache__/
 db.sqlite3
-.shop
+.venv
 settings/development.py
 settings/production.py
