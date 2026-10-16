@@ -1,0 +1,36 @@
+body,
+.base-container{
+    height: 100vh;
+}
+
+.base-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";                         
+}
+
+header{
+    grid-area: header;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+main{
+    grid-area: main;
+    border: 1px solid green;
+}
+
+footer{
+    grid-area: footer;
+    border: 1px solid gold;
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% include "login.html" %}
+    {% include "logout.html" %}
+    {% include "register.html" %}
+    <div class="base-container">
+        <header>
+            {% block header %}
+                <nav>
+                    {% block nav %}
+                        {% if user.is_authenticated %}
+                            <button popovertarget="logout">logout</button>
+                        {% else %}
+                            <button popovertarget="login">login</button>
+                            <button popovertarget="register">register</button>
+                        {% endif %}
+                    {% endblock nav %}
+                </nav>
+                <div>
+                    {% block search %}
+                        <form action="" method="get">
+                            <input type="search" name="" id="">
+                            <input type="submit" value="search">
+                        </form>
+                    {% endblock search %}
+                </div>
+            {% endblock header %}
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
+</body>
+</html>
