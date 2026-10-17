@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ecom',
         'PORT': '5432',
-        'PASSWORD': '12345',
+        'PASSWORD': '0fe81b1722stan',
         'USER': 'postgres',
         'HOST': 'localhost'
     }
