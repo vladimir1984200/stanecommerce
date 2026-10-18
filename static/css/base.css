@@ -1,4 +1,13 @@
-body,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
 .base-container{
     height: 100vh;
 }
